@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/Common.css" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="nav">
+        <a class="active" onclick="LoadPage('Home')">Home</a>
+        <a onclick="LoadPage('Renders')">Blender Renders</a>
+        <a href="#Tools">Tools</a>
+        <a href="#Github">Github Projects</a>
+    </div>
+    <div id="InnerContent" class="InnerContent"></div>
+</body>
+</html>
+
+<script>
+    function LoadPage(page) {
+        document.getElementById("InnerContent").innerHTML = `<object type="text/html" data="${page}.html" style="margin: 0%; width: 100%; height: ${window.innerHeight-55}px;"></object>`;
+    }
+    window.onload = function exampleFunction() {
+        document.getElementById("InnerContent").innerHTML = `<object type="text/html" data="Home.html" style="margin: 0%; width: 100%; height: ${window.innerHeight-55}px;"></object>`;
+    }
+</script>
