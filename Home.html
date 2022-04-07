@@ -159,9 +159,10 @@ body{
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
-        line-height: 5;
         color: rgb(163, 106, 0);
         font-size: 100px;
+        height: 40vh;
+        transform: translate(0,30%);
     }
 
     p {
@@ -171,23 +172,26 @@ body{
     }
 
     p.Head {
-        text-align: center;
-        color:rgb(88, 194, 18);
-        font-size: 70px;
+        text-align: left;
+        color: white;
+        font-size: 50px;
         padding-top: 5%;
     }
 
     p.Description {
-        text-align: center;
-        color:rgb(114, 192, 202);
-        font-size: 30px;
+        text-align: left;
+        color: white;
     }
     
     .about{
         background-color: rgb(26, 26, 26);
         min-height: 500px;
         box-shadow: 1px 0px 10px orange;
-  }
+    }
+
+    .box {
+        width: 400px;
+    }
 </style>
 <div class="area">
     <div class="circles">
@@ -203,9 +207,9 @@ body{
     </div>
     <h1>Home</h1>
     <div class="about">
-        <p class="Head">About Me</p>
-        <p class="Description">Hello. I am SineVector241. I am a hobbyist developer who codes in C#, Python, Javascript and TypeScript</p>
-        <p class="Description">I Mainly play Minecraft Bedrock Edition, Geometry Dash and Mindustry. I also develop MCBE addons, C# Softwares</p>
-        <p class="Description">Mobile Apps and Discord Bots. I try to help out people as best as I can and also do teach people how to code.</p>
+        <div class="box">
+            <p class="Head">About Me</p>
+            <p class="Description">Hello. I am SineVector241. I am a hobbyist developer who codes in C#, Python, Javascript and TypeScript I Mainly play Minecraft Bedrock Edition, Geometry Dash and Mindustry. I also develop MCBE addons, C# Softwares Mobile Apps and Discord Bots. I try to help out people as best as I can and also do teach people how to code.</p>
+        </div>
     </div>
 </div>

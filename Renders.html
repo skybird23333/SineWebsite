@@ -8,78 +8,98 @@
         margin: 10px;
         background-color: rgb(94, 94, 94);
         vertical-align: top;
+        transform: translate(0,20%);
     }
 
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
-        padding: 20px;
+        color: rgb(192, 211, 25);
+        font-size: 100px;
+        filter: blur();
+        text-shadow: 5px 5px rgb(153, 1, 255)
     }
 
     .images {
         text-align: center;
         background-size: cover;
-        overflow: hidden;
+        position: absolute;
+        transform: translate(0,4%);
+        z-index: 2;
+    }
+
+    .bgimage {
+        background: url("images/ffc\ survival\ the\ tavern.png");
+        filter: blur();
+        -webkit-filter: blur(8px);
+        width: auto;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 2000px;
     }
 
     .container {
-        background-image: url("images/SineVector241\ BS.png");
         margin: 0;
         padding: 0;
         background-repeat: repeat-x;
         background-position-x: center;
     }
 
-    body {
-        background-color:rgb(94, 94, 94);
-    }
-
     * {
         margin: 0;
+        box-sizing: border-box;
+        padding: 0;
     }
 
+    body {
+        background-color:rgba(223, 145, 0, 0);
+    }
 </style>
-<div class=container>
-    <div class="images" id="images">
-        <h1>Blender Renders</h1>
-        <img src="images/ffcsurvivaldocksspawn.png" />
-        <img src="images/genblocksense.png" />
-        <img src="images/audia city panning.png" />
-        <img src="images/FFC 2 guys map.png" />
-        <img src="images/FFC cinematic renders water.png" />
-        <img src="images/FFC opening scene.png" />
-        <img src="images/FFC scene farm.png" />
-        <img src="images/ffc survival inside tavern.png" />
-        <img src="images/FFCmarketplace logo.png" />
-        <img src="images/ffcspawnnight.png" />
-        <img src="images/ffcsurvivaldocksspawn.png" />
-        <img src="images/genblocksensespawn2.png" />
-        <img src="images/glass smash test.png" />
-        <img src="images/glass test.png" />
-        <img src="images/houselighting.png" />
-        <img src="images/houselightingblue.png" />
-        <img src="images/Hunter_VS_Runner.png" />
-        <img src="images/ItzGeneral's Events Tours.png" />
-        <img src="images/lantern light test.png" />
-        <img src="images/me.png" />
-        <img src="images/my room 2.png" />
-        <img src="images/my room.png" />
-        <img src="images/pirate talking bar scene.png" />
-        <img src="images/red fusion banner 2.png" />
-        <img src="images/red fusion logo.png" />
-        <img src="images/red fusion studio.png" />
-        <img src="images/rfs carrot walking scene (2).png" />
-        <img src="images/rfs carrot walking scene.png" />
-        <img src="images/Screenshot_55.png" />
-        <img src="images/SineVector241 BS.png" />
-        <img src="images/tavern stage.png" />
-        <img src="images/untitled.png" />
-        <img src="images/Water Test Render.png" />
-        <img src="images/youtube banner v2.png" />
-    </div>
-</div>
 
-<script>
-    window.onload = function Loaded() {
-    }
-</script>
+<head>
+    <meta content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class=container>
+        <div class="images" id="images">
+            <h1>Blender Renders</h1>
+            <img src="images/ffcsurvivaldocksspawn.png" />
+            <img src="images/genblocksense.png" />
+            <img src="images/audia city panning.png" />
+            <img src="images/FFC 2 guys map.png" />
+            <img src="images/FFC cinematic renders water.png" />
+            <img src="images/FFC opening scene.png" />
+            <img src="images/FFC scene farm.png" />
+            <img src="images/ffc survival inside tavern.png" />
+            <img src="images/FFCmarketplace logo.png" />
+            <img src="images/ffcspawnnight.png" />
+            <img src="images/ffcsurvivaldocksspawn.png" />
+            <img src="images/genblocksensespawn2.png" />
+            <img src="images/glass smash test.png" />
+            <img src="images/glass test.png" />
+            <img src="images/houselighting.png" />
+            <img src="images/houselightingblue.png" />
+            <img src="images/Hunter_VS_Runner.png" />
+            <img src="images/ItzGeneral's Events Tours.png" />
+            <img src="images/lantern light test.png" />
+            <img src="images/me.png" />
+            <img src="images/my room 2.png" />
+            <img src="images/my room.png" />
+            <img src="images/pirate talking bar scene.png" />
+            <img src="images/red fusion banner 2.png" />
+            <img src="images/red fusion logo.png" />
+            <img src="images/red fusion studio.png" />
+            <img src="images/rfs carrot walking scene (2).png" />
+            <img src="images/rfs carrot walking scene.png" />
+            <img src="images/Screenshot_55.png" />
+            <img src="images/SineVector241 BS.png" />
+            <img src="images/tavern stage.png" />
+            <img src="images/untitled.png" />
+            <img src="images/Water Test Render.png" />
+            <img src="images/youtube banner v2.png" />
+        </div>
+        <div class="bgimage"></div>
+    </div>
+</body>
